@@ -1,0 +1,106 @@
+{
+	"users": [{
+		"email": "quanly_1@gmail.com",
+		"password": "12345678",
+		"urls": [{
+			"path": "/main/admin/administrators",
+			"modal": "showDeleteAdminModal(administrator)",
+			"testcases": [
+			{
+				"casename": "Delete_001",
+				"pos": "1",
+				"assert": {
+					"type": "contain",
+					"data": "Bạn có chắc chắn muốn xóa?"
+				}
+			},
+			{
+				"casename": "Delete_002",
+				"pos": "1",
+				"assert": {
+					"type": "contain",
+					"data": "Xóa tài khoản thành công"
+				}
+			},
+			{
+				"casename": "Delete_003",
+				"pos": "1",
+				"assert": {
+					"type": "contain",
+					"data": "Tạm dừng"
+				}
+			},
+			{
+				"casename": "Delete_004",
+				"pos": "n",
+				"assert": {
+					"type": "contain",
+					"data": "Tạm dừng"
+				}
+			},
+			{
+				"casename": "Delete_005",
+				"pos": "4",
+				"assert": {
+					"type": "contain",
+					"data": "Tạm dừng"
+				}
+			}
+
+		]
+		},
+		{
+			"path": "/main/admin/admin_provinces",
+			"modal": "showDeleteAdminModal(admin_province)",
+			"testcases": [{
+					"casename": "Delete_008",
+					"pos": "1",
+					"assert": {
+						"type": "contain",
+						"data": "Bạn có chắc chắn muốn xóa"
+					}
+				},
+				{
+					"casename": "Delete_009",
+					"pos": "1",
+					"assert": {
+						"type": "contain",
+						"data": "Xóa tài khoản thành công"
+					}
+				},
+				{
+					"casename": "Delete_010",
+					"pos": "1",
+					"assert": {
+						"type": "contain",
+						"data": "Tạm dừng"
+					}
+				},
+				{
+					"casename": "Delete_011",
+					"pos": "0",
+					"assert": {
+						"type": "contain",
+						"data": "Tạm dừng"
+					}
+				},
+				{
+					"casename": "Delete_012",
+					"pos": "4",
+					"assert": {
+						"type": "contain",
+						"data": "Tạm dừng"
+					}
+				}
+			]
+		}
+
+		]
+	},
+	{
+			"email": "",
+			"password": "",
+			"urls": []
+		}
+	]
+}
